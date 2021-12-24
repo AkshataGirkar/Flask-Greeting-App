@@ -1,0 +1,29 @@
+body{
+	margin: 0;
+	display: grid;
+	place-items:  center;
+	background-color: yellow;
+}
+img{
+	padding: 30px;
+}
+h2{
+	color: blueviolet;
+}
+input{
+	padding: 20px;
+	border-radius: 15px;
+	border: none;
+}
+button{
+	padding: 16px;
+	border: none;
+	cursor: pointer;
+	background-color: blueviolet;
+	color: white;
+	font-size: 18px;
+	border-radius: 10px;
+}
+button:hover{
+	background-color: darkmagenta;
+}

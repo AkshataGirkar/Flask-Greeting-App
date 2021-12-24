@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Greeting app</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+	<img src="https://us.123rf.com/450wm/maxborovkov/maxborovkov1809/maxborovkov180900067/110330061-autumn-welcome-sign-with-colorful-maple-leaves-vector-background-.jpg?ver=6" height="300" width="500" >
+	<br>
+	<!-- message flashing -->
+	{% for msg in get_flashed_messages() %}
+	<h2>{{msg}}</h2>
+	{% endfor %}
+	<form action="greet" method="post">
+		<input type="text" name="name_input">
+		<button type="submit" value="Greet" id="greet">GREET</button>
+	</form>
+</body>
+</html>
